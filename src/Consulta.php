@@ -13,12 +13,13 @@ function __construct($paciente, $data){
 
 // Método para exibir informações
 function exibir(){
-    echo "Consulta de ".$this->paciente->getName()." em {$this->data}<br>";
+    echo "Consulta de ".{$this->paciente}." em {$this->data}<br>";
 }
 
 }
 
 // Criando objetos
+$p1 = "João";
 $c1 = new Consulta($p1, "10/04/2025");
 
 // Exibindo informações
