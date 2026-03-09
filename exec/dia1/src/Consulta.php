@@ -12,8 +12,8 @@ function __construct($paciente, $data){
 }
 
 // Método para exibir informações
-function exibir(){
-    echo "Consulta de ".{$this->paciente}." em {$this->data}<br>";
+function exibir() {
+    echo "Consulta de {$this->paciente} em {$this->data}<br>";
 }
 
 }

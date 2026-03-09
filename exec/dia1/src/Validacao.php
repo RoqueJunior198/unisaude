@@ -14,12 +14,11 @@
 
 <?php
 
-require_once "Paciente.php";
-
-// definir variável
+// definir variáveis
 $name = $nascimento = $sexo = $cpf = $email = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Verifica se o formulário foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["cadastrar"])) {
 
   $name = test_input($_POST["name"]);
   $nascimento = test_input($_POST["nascimento"]);
@@ -30,17 +29,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // criar objeto paciente
   $paciente = new Paciente($name, $nascimento, $sexo, $cpf, $email);
 
-  echo "<h3>Paciente cadastrado:</h3>";
-  echo "Nome: " . $paciente->nome . "<br>";
-  echo "CPF: " . $paciente->cpf . "<br>";
-  echo "Email: " . $paciente->email . "<br>";
-}
+// exibir informações
+echo "<h3>Paciente cadastrado:</h3>";
+echo "Nome: " . $paciente->getNome() . "<br>";
+echo "Nascimento: " . $paciente->getNascimento() . "<br>";
+echo "Sexo: " . $paciente->getSexo() . "<br>";
+echo "CPF: " . $paciente->getCpf() . "<br>";
+echo "Email: " . $paciente->getEmail() . "<br>";
 
+// Função para limpar os dados
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
+}
 }
 ?>
 
