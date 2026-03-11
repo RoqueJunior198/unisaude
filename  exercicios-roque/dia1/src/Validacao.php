@@ -31,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["cadastrar"])) {
 
 // exibir informações
 echo "<h3>Paciente cadastrado:</h3>";
-echo "Nome: " . $paciente->getNome() . "<br>";
 echo "Nascimento: " . $paciente->getNascimento() . "<br>";
 echo "Sexo: " . $paciente->getSexo() . "<br>";
 echo "CPF: " . $paciente->getCpf() . "<br>";
