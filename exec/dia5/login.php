@@ -30,8 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         body{
             font-family: Arial, sans-serif;
             background:#f0f2f5;
-            display: flex;
-            flex-direction: column;
+            flex-direction: columm;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -40,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .login-container{
             width:300px;
-            margin-top: 80px auto;
+            margin:100px auto;
             padding:30px;
             background:white;
             border-radius:8px;
@@ -54,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             color: #333;
         }
 
-       .header{ 
+        .header{ 
             background: #007;
             padding: 10PX;
             width: 100%;
