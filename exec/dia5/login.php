@@ -98,10 +98,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <form action="" method="POST">
 
-E-mail do usuário:
+<strong>E-mail do usuário:</strong>
 <input type="text" name="usuario" placeholder="email do usuário" value="<?php echo $usuario; ?>" required>
 
-Senha:
+<strong>Senha:</strong>
 <input type="password" name="senha" placeholder="senha" value="<?php echo $senha; ?>" required>
 
 <br>
