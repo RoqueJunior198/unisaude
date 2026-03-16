@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background:white;
             border-radius:8px;
             box-shadow:0px 4px 10px #ccc;
-            text-align:center;
+            text-align:left;
         }
 
          .login-container h2{
@@ -70,15 +70,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             border-radius: 5px;
         }
 
-        .login-container button{
-           width:100%;
-            padding:10px;
-            background: #007;
-            border: none;
-            border-radius: 5px;
-            color: #f0f2f5;
-            font-size: 16px;
-            cursor:pointer;
+/*Container Botões*/
+
+       .container{
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+
+        .container button{
+           flex:1px;
+           padding: 10px;
+           background: #1b2064;
+           border: none;
+           border-radius: 5px;
+           color: white;
+           font-size: 14px;
+           cursor: pointer;
         }
 
     </style>
@@ -106,15 +115,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <br>
 
-<button type="submit">Acessar</button>
-
-<br><br>
-
-<button type="submit" name="limpar">Limpar dados</button>
-
 </form>
 
+<div class="container">
+
+<button type="submit">Acessar</button>
+
+<button type="submit">Esqueceu senha</button>
+
+<button type="submit">Cadastrar</button>
+
 </div>
+
+</div>
+
+
+
+
+
 
 </body>
 </html>
