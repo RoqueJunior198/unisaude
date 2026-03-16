@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         header{
-           background: lightslategray;
+           background: #007;
             padding: 10PX;
         }
 
@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .login-container button{
            width:100%;
             padding:10px;
-            background: #007bff;
+            background: #007;
             border: none;
             border-radius: 5px;
             color: #f0f2f5;
