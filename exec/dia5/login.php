@@ -58,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 10PX;
             width: 100%;
             color: white;
+            font-size: 20px;
             text-align: center;
         }
 
@@ -87,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <header class="header"> 
         <div >
-            TELA DE LOGIN - UNISAUDE
+            <p> <strong>TELA DE LOGIN - UNISAUDE</strong>  </p>
         </div>
     </header>
 
