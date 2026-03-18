@@ -7,111 +7,111 @@
 
     <style>
 
-        body{
-            font-family: Arial, sans-serif;
-            background:#f0f2f5;
-            flex-direction: columm;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+ table{
+    width:100%;
+    border-collapse:collapse;
+}
 
-        .login-container{
-            width:300px;
-            margin:100px auto;
-            padding:30px;
-            background:white;
-            border-radius:8px;
-            box-shadow:0px 4px 10px #ccc;
-            text-align:left;
-        }
+th, td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:left;
+}
 
-         .login-container h2{
-            text-align:center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .header{ 
-            background: #007;
-            padding: 10PX;
-            width: 100%;
-            color: white;
-            font-size: 20px;
-            text-align: center;
-        }
-
-       .login-container input{
-            width:100%;
-            padding:10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-/*Container Botões*/
-
-       .container{
-            display: flex;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-
-        .container button{
-           flex:1px;
-           padding: 10px;
-           background: #1b2064;
-           border: none;
-           border-radius: 5px;
-           color: white;
-           font-size: 14px;
-           cursor: pointer;
-        }
+th{
+    background:#007;
+    color:white;
+}
 
     </style>
 
 </head>
 
 <body>
-    <header class="header"> 
-        <div >
-            <p> <strong>TELA DE LOGIN - UNISAUDE</strong>  </p>
-        </div>
-    </header>
+   <table>
+<tr>
+<th>ID</th>
+<th>Nome</th>
+<th>Email</th>
+<th>Ações</th>
+</tr>
 
-<div class="login-container">
+<tr>
+<td>1</td>
+<td>João</td>
+<td>joao@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<h2>Login</h2>
+<tr>
+<td>2</td>
+<td>Ana</td>
+<td>ana@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<form action="" method="POST">
+<tr>
+<td>3</td>
+<td>Maria</td>
+<td>maria@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<strong>E-mail do usuário:</strong>
-<input type="text" name="usuario" placeholder="email do usuário" value="<?php echo $usuario; ?>" required>
+<tr>
+<td>4</td>
+<td>Julia</td>
+<td>julia@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<strong>Senha:</strong>
-<input type="password" name="senha" placeholder="senha" value="<?php echo $senha; ?>" required>
+<tr>
+<td>5</td>
+<td>Marcos</td>
+<td>marcos@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<br>
+<tr>
+<td>5</td>
+<td>Marcelo</td>
+<td>marcos@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-</form>
+<tr>
+<td>6</td>
+<td>Marta</td>
+<td>marta@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<div class="container">
+<tr>
+<td>7</td>
+<td>Gustavo</td>
+<td>gustavo@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<button type="submit">Acessar</button>
+<tr>
+<td>8</td>
+<td>Débora</td>
+<td>debinha@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<button type="submit">Esqueceu senha</button>
+<tr>
+<td>9</td>
+<td>André</td>
+<td>andre@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
-<button type="submit">Cadastrar</button>
-
-</div>
-
-</div>
-
-
-
-
+<tr>
+<td>10</td>
+<td>Eusébio</td>
+<td>eusebio@email.com</td>
+<td>Editar | Excluir</td>
+</tr>
 
 
 </body>
